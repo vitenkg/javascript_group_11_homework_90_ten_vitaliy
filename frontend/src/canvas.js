@@ -16,8 +16,6 @@ const Canvas = () => {
         ws.current.onmessage = event => {
             const decoded = JSON.parse(event.data);
 
-            console.log(decoded);
-
             if (decoded.type === 'NEW_DRAW') {
                 setDrawPixel(prev => [
                     ...prev,

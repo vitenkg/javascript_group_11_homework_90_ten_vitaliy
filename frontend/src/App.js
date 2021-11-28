@@ -24,7 +24,6 @@ const App = () => {
         };
     }, []);
 
-
     const sendMessage = () => {
         ws.current.send(JSON.stringify({
             type: 'CREATE_MESSAGE',
